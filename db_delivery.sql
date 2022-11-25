@@ -200,10 +200,10 @@ INSERT INTO `dish_flavor` VALUES ('1413389540592263169', '1413384757047271425', 
 INSERT INTO `dish_flavor` VALUES ('1413389684020682754', '1413342036832100354', '温度', '[\"常温\",\"冷藏\"]', '2021-07-09 15:12:18', '2021-07-09 15:12:18', '1', '1', '0');
 
 -- ----------------------------
--- Table structure for employee
+-- Table structure for administrator
 -- ----------------------------
-DROP TABLE IF EXISTS `employee`;
-CREATE TABLE `employee` (
+DROP TABLE IF EXISTS `administrator`;
+CREATE TABLE `administrator` (
   `id` bigint(20) NOT NULL COMMENT '主键',
   `name` varchar(32) COLLATE utf8_bin NOT NULL COMMENT '姓名',
   `username` varchar(32) COLLATE utf8_bin NOT NULL COMMENT '用户名',
@@ -221,9 +221,9 @@ CREATE TABLE `employee` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='员工信息';
 
 -- ----------------------------
--- Records of employee
+-- Records of administrator
 -- ----------------------------
-INSERT INTO `employee` VALUES ('1', '管理员', 'admin', 'e10adc3949ba59abbe56e057f20f883e', '13812312312', '1', '110101199001010047', '1', '2021-05-06 17:20:07', '2021-05-10 02:24:09', '1', '1');
+INSERT INTO `administrator` VALUES ('1', '管理员', 'admin', 'e10adc3949ba59abbe56e057f20f883e', '13812312312', '1', '110101199001010047', '1', '2021-05-06 17:20:07', '2021-05-10 02:24:09', '1', '1');
 
 -- ----------------------------
 -- Table structure for orders
