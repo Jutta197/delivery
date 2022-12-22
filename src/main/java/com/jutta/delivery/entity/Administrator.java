@@ -3,6 +3,7 @@ package com.jutta.delivery.entity;
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
+
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
@@ -24,7 +25,7 @@ public class Administrator implements Serializable {
 
     private String sex;
 
-    private String idNumber;//身份证号码
+    private String idNumber;//身份证号码 yml里map-underscore-to-camel-case: true
 
     private Integer status;
 
