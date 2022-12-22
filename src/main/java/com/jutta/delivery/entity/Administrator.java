@@ -25,7 +25,7 @@ public class Administrator implements Serializable {
 
     private String sex;
 
-    private String idNumber;//身份证号码 yml里map-underscore-to-camel-case: true
+    private String idNumber;//身份证号 yml里map-underscore-to-camel-case: true
 
     private Integer status;
 
