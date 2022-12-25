@@ -20,7 +20,7 @@ public class AdministratorController {
     @Autowired
     private AdministratorService administratorService;
 
-    // 员工登录
+    // 管理登录
 
     @PostMapping("/login")
     public R<Administrator> login(HttpServletRequest request, @RequestBody Administrator administrator) {
