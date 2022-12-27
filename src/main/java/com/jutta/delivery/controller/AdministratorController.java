@@ -33,26 +33,26 @@ public class AdministratorController {
 //        2、根据页面提交的用户名username查询数据库
         LambdaQueryWrapper<Administrator> queryWrapper = new LambdaQueryWrapper<>();
         queryWrapper.eq(Administrator::getUsername, administrator.getUsername());
-        Administrator adm = administratorService.getOne(queryWrapper);
+        Administrator admi = administratorService.getOne(queryWrapper);
 
 //        3、如果没有查询到则返回登录失败结果
-        if (adm == null) {
+        if (admi == null) {
             return R.error("Login failed");
         }
 
 //        4、密码比对，如果不一致则返回登录失败结果
-        if (!adm.getPassword().equals(password)) {
+        if (!admi.getPassword().equals(password)) {
             return R.error("Login failed");
         }
 
 //        5、查看管理状态，如果为已禁用状态，则返回管理已禁用结果
-        if (adm.getStatus() == 0) {
+        if (admi.getStatus() == 0) {
             return R.error("The account is disabled");
         }
 
 //        6、登录成功，将管理id存入Session并返回登录成功结果
-        request.getSession().setAttribute("administrator", adm.getId());
-        return R.success(adm);
+        request.getSession().setAttribute("administrator", admi.getId());
+        return R.success(admi);
 
     }
 }
