@@ -54,5 +54,13 @@ public class AdministratorController {
         request.getSession().setAttribute("administrator", admi.getId());
         return R.success(admi);
 
+
+//        @PostMapping("/logout")
+//        public R<String> logout(HttpServletRequest request){
+//            request.getSession().removeAttribute("admi");
+//            return R.success("退出成功")
+//        }
+
+
     }
 }
