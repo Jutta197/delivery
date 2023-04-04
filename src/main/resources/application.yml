@@ -5,7 +5,7 @@ spring:
     name: delivery
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/db_delivery
+    url: jdbc:mysql://localhost:3306/delivery
     username: root
     password: "123456"
     type: com.alibaba.druid.pool.DruidDataSource

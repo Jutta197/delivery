@@ -35,7 +35,7 @@ public class AdministratorController {
         queryWrapper.eq(Administrator::getUsername, administrator.getUsername());
         Administrator admi = administratorService.getOne(queryWrapper);
 
-        // debug 第三步通不过，可能是数据库的问题？
+        // debug 第三步通不过，可能是数据库的问题？  是的，数据库名没对
 
 //        3、如果没有查询到则返回登录失败结果
         if (admi == null) {
